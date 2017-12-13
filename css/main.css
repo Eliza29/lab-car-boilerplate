@@ -1,1 +1,19 @@
 /* Los estilos de tu proyecto */
+
+.image{
+    background-repeat: no-repeat;
+   
+    
+}
+.image-taxi{
+    background-image: url('../assets/images/taxi.jpg');
+    background-position: 60% bottom;
+    background-position: 60% bottom;
+    background-size:cover; 
+    height:700px;
+}
+
+.image-iphone{
+    background-image: url('../assets/images/iPhone6Plus.png');
+    height:450px ;
+}

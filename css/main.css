@@ -1,19 +1,163 @@
 /* Los estilos de tu proyecto */
+*{
+    box-sizing: border-box;
+}
+:root {
+    --orange:#f7b617;
+  }
+.background{
+    background-color: var(--orange);
+}  
+.view-mobile {
+    display: block;
+}
+.view-desktop {
+    display: none;
+}
 
+/*Encabezado*/ 
+a{
+    color: black;
+}
+.navbar-header button, .navbar-header button span{
+    border: 1px solid gray;
+}
+/*Primera Sección*/
+.box-padding{
+    padding: 8% 0;
+}
 .image{
     background-repeat: no-repeat;
-   
-    
-}
+}   
 .image-taxi{
     background-image: url('../assets/images/taxi.jpg');
-    background-position: 60% bottom;
-    background-position: 60% bottom;
+    background-position: center bottom;
     background-size:cover; 
-    height:700px;
+    height:750px;
+}
+.size-box{
+    color: white;
+    height: 250px;
+    padding: 30px 40px;
+    margin-top: 15%;
+}
+.title-travel, .text-travel{
+    margin-bottom: 5%;
+}
+.title-travel h1{
+    margin: 2px 0;
+}
+.text-travel{
+    font-size: 20px;
+}
+.line{
+    padding: 5%;
+}
+.line span{
+    padding: 8%;
+}
+.line::before{
+    background-color:white; 
+    display:inline-block; 
+    content: " ";
+    width: 30%;
+    height:1px ;
+}
+.line::after{
+    background-color:white; 
+    display:inline-block; 
+    content: " ";
+    width: 30%;
+    max-width: 30%;
+    height:1px ;
+}
+/*Segunda Sección*/
+.border-white{
+    border: 1px solid white;
+    color: white;
+    margin: 3%;
+    height: 450px;
+    padding: 3%;
+}
+.border-white p{
+    font-size:18px;
+    margin-bottom:4%; 
+}
+.border-white p,.border-white h2{
+    margin-bottom:5%; 
+}
+.iphone img{
+    max-width:300px;
+    width: 100%;
 }
 
-.image-iphone{
-    background-image: url('../assets/images/iPhone6Plus.png');
-    height:450px ;
+/*Tercera Sección*/
+.image-conduce{
+    background-image: url('../assets/images/conduce.jpg');
+    background-position: center center;
+    background-size:100% 100%; 
+    height:500px;
 }
+.image-conduce div{
+    color:white;
+}
+.box-dark{
+    background-color:rgba(0, 0, 0, 0.6);
+    height:500px;
+    padding: 10% 5%;
+}
+
+footer{
+    background-color: #2b2b2b;
+    color: white;
+}
+
+
+
+
+@media (min-width: 768px) {
+    .view-mobile {
+      display: none;
+    }
+    
+    .view-desktop {
+      display: block;
+    }
+  /*Primera Sección*/  
+    .size-box{
+        color: white;
+        height: 390px;
+        padding: 30px 40px;
+        margin-top: 1%;
+    }
+    /*Segunda Sección*/
+    .border-white{
+        border: 1px solid white;
+        color: white;
+        margin: 2% 30% 2% 0;
+        height: 450px;
+        width: 80%;
+        padding: 3%;
+    }
+    .iphone img{
+        max-width:400px;
+        width: 100%;
+    }  
+    /*Tercera Sección*/
+    .image-conduce div{
+        color:white;
+    }
+    .box-dark{
+        background-color:rgba(0, 0, 0, 0.6);
+        height:500px;
+        padding: 10% 3%;
+    }
+    /*Cuarta Seccion*/
+    .box-form{
+        color:white;
+    }
+    .form-color{
+        border: 1px solid white;
+        background-color:  var(--orange);
+    }
+    

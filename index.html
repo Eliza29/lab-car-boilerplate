@@ -39,10 +39,48 @@
                             <a href="#">Conduce</a>
                         </li>
                         <li role="presentation">
-                            <a href="#">Inicia Sesión</a>
+                            <a data-toggle="modal" href="#myModal">Inicia Sesión</a>
                         </li>
                     </ul>
                 </div>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header" style="padding:35px 50px;">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <img src="assets/images/avatar.png" alt="profile">
+                            </div>
+                            <div class="modal-body">
+                                <form role="form" class="form-sign">
+                                    <div class="form-group row">
+                                        <label for="usrname" class="col-sm-2">
+                                            <span class="glyphicon glyphicon-user"></span>
+                                        </label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control" id="usrname" placeholder="Username" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="psw" class="col-sm-2">
+                                            <span class="glyphicon glyphicon-lock"></span>
+                                        </label>
+                                        <div class="col-sm-8">
+                                            <input type="password" class="form-control" id="psw" placeholder="Password" required>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-warning btn-lg center-block">
+                                        <span class="glyphicon glyphicon-off"></span> LOGING</button>
+                                    <p>Forgot Password
+                                        <a href="#">Click Here</a>
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
         </nav>
     </header>
@@ -206,9 +244,9 @@
                     </ul>
                 </div>
                 <div class="col-sm-3 store-image view-mobile">
-                        <img src="assets/images/appstore.png" alt="appstore">
-                        <img src="assets/images/enBadgeWebGeneric.png" alt="googleplay">
-                    </div>
+                    <img src="assets/images/appstore.png" alt="appstore">
+                    <img src="assets/images/enBadgeWebGeneric.png" alt="googleplay">
+                </div>
                 <hr>
                 <p>&#169 2017 LabCar technologies Inc.</p>
             </div>

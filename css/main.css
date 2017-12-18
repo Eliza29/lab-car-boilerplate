@@ -187,6 +187,18 @@ footer{
 .form-sign p{
   padding-top:25px; 
 }
+.register-modal{
+    background-color: #a9a9a9;
+}
+.btn-black{
+    background-color: black;
+    color:white;
+}
+.name {
+  padding: 0;
+}
+
+
 /* Desktop*/
 @media (min-width: 768px) {
     .view-mobile {

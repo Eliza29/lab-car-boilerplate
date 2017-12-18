@@ -194,7 +194,55 @@
                     <h2>Conduce cuando quieras</h2>
                     <p class="lead">LabCar es una opción flexible para alcanzar tus metas financieras</p>
                     <div>
-                        <button class="btn btn-lg background">Conviertete en conductor</button>
+                        <button class="btn btn-lg background" data-toggle="modal" data-target="#modalConduce">Conviertete en conductor</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal Conduce -->
+            <div class="modal fade" id="modalConduce" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content register-modal">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <form role="form" class="form-conduce">
+                                <div class="form-group">
+                                    <label for="doors">¿Tienes vehiculos de 4 puertas?</label>
+                                    <select id="doors" class="form-control">
+                                        <option>Si</option>
+                                        <option>No</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="brand">Marca</label>
+                                    <select id="brand" class="form-control">
+                                        <option>Elige la marca del vehiculo</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="car">Modelo</label>
+                                    <select id="car" class="form-control">
+                                        <option>Modelo1</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="year">Año</label>
+                                    <select id="year" class="form-control">
+                                        <option>2017</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputCar">Número de la matricula</label>
+                                    <input type="text" class="form-control" id="inputCar" placeholder="Número de la matricula">
+                                </div>
+                                <div>
+                                    <p>La información de la matricula ayuda a los clientes a identificar tu vehiculo</p>
+                                </div>
+                                <button type="submit" class="btn btn-default btn-info btn-block">Enviar</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>

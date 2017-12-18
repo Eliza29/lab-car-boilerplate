@@ -197,7 +197,12 @@ footer{
 .name {
   padding: 0;
 }
-
+.form-conduce{
+    padding: 20px;
+}
+.form-conduce label, .form-conduce p{
+    color: black;
+}
 
 /* Desktop*/
 @media (min-width: 768px) {

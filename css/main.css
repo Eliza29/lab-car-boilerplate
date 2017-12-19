@@ -22,6 +22,9 @@ a{
 .navbar-header button, .navbar-header button span{
     border: 1px solid gray;
 }
+.pull-left{
+    margin: 0 10% 5% 0;
+}
 /*Primera Sección*/
 .box-padding{
     padding: 8% 0;
